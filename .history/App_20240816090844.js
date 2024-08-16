@@ -21,7 +21,7 @@ function App() {
     <div>
       <h1>Inventory</h1>
       <ol>
-        {inventoryItems.map((item, index) => (
+        {inventoryItems.map((items, index) => (
           <li key={index}>
             <InventoryItem
               name={item.name}

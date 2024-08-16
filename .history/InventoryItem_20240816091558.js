@@ -14,7 +14,9 @@ function InventoryItem({ name, type, quantity = 1, price = 0 }) {
 
       {lowStock && <Message>Warning: Low Stock!</Message>}
       {highValue && (
-        <Message>High Value Item: Extra Protection Necessary!</Message>
+        <Message style={{ color: "red", fontWeight: "bold" }}>
+          High Value Item: Extra Protection Necessary!
+        </Message>
       )}
     </div>
   );

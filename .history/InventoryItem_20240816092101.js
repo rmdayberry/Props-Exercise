@@ -13,9 +13,9 @@ function InventoryItem({ name, type, quantity = 1, price = 0 }) {
       <p>Total Value: ${totalValue.toFixed(2)}</p>
 
       {lowStock && <Message>Warning: Low Stock!</Message>}
-      {highValue && (
-        <Message>High Value Item: Extra Protection Necessary!</Message>
-      )}
+      {highValue && <Message style={{ color: "red", fontWeight: "bold" }}>
+          High Value Item: Extra Protection Necessary!
+        </Message>
     </div>
   );
 }
